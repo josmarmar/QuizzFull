@@ -1,0 +1,115 @@
+
+
+/* ----------- Toggles */
+
+
+
+.body.wrong {
+    background-color: rgb(250, 8, 8);
+
+}
+
+.body.correct {
+    background-color: lawngreen;
+
+}
+
+/* --------------Main */
+body{
+    
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(238, 202, 202);
+
+}
+
+#container {
+
+    max-width: 80%;
+    width: 400px;
+    padding: 5%;
+
+    background-color: rgba(133, 99, 120, 0.65);
+    
+    border-radius: 2.5%;
+    box-shadow: 5px 7.5px 7.5px 4px white ;
+    /* OffsetX OffsetY Blur Spread Color */
+    border: 1pt solid rgba(247, 121, 209, 0.8);
+}
+
+/*.answOpt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+} */
+/* No sé qué falla, nos vamos a Grid */
+
+.answOpt{
+    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5%;
+    padding-bottom: 8px;
+    
+}
+/* Dios bendiga Grid */
+
+
+.answBtn:focus {outline: 0;}
+/* Esta maravilla quita el marco de selección que se quedaba cuando clickabas uno de los botones de las respuestas. Ese marco se veía mal por culpa del border-radius */
+.answBtn{
+
+    height: 100px;
+    margin-top: 15%;
+    
+    background-color: rgb(250, 215, 247);
+    box-shadow: 0 0.3px 5px 2px wheat;
+    border-radius: 10pt;
+    
+    cursor: pointer;
+
+}
+
+.answBtn:hover {
+    box-shadow: 0 0.3px 5px 5px wheat
+}
+
+.btnWrap {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.startBtn, .nextBtn:focus {outline: 0;}
+
+.startBtn{
+
+    width: 60pt;
+    height: 60pt;
+
+}
+
+.startBtn, .nextBtn {
+
+    background-color: rgb(250, 215, 247);
+    box-shadow: 0 0.3px 5px 2px wheat;
+    border-radius: 10pt;
+    
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+
+}

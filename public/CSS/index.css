@@ -1,0 +1,93 @@
+
+
+
+
+
+body {
+
+    overflow:hidden;
+
+}
+
+
+
+
+#bg {
+
+    height: 100vh;
+    width: 100%;
+    
+    background-color: blueviolet;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+
+    
+} 
+
+#btnToQuiz {
+    position: absolute;
+    z-index: 999;
+    border: cornsilk 2pt solid;
+    color: black;
+    text-decoration: none;
+    bottom: 15vh;
+    left: 5vw;
+    background-color:rgb(238, 202, 202);
+    margin: 2%;
+    padding: 2%;
+    
+}
+
+#log-upForm{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 5%;
+    right: 5%;
+    border: cornsilk 2pt solid;
+    padding: 1%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
